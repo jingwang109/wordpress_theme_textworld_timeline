@@ -3,7 +3,7 @@
 ?>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-10 col-md-offset-1 content-block">
 				<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<div class="article-content">
 					<?php the_content(); ?>

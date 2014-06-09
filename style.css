@@ -253,6 +253,21 @@ footer p{
 	padding-left: 20px;
 }
 
+
+/* START-content-aside */
+.article-content{
+	padding: 10px 20px;
+	margin-top: 30px;
+}
+.content-block .title{
+	text-align: center;
+}
+.content-block a:hover{
+	text-decoration: none;
+}
+
+/* END-content-aside */
+
 #music-body{
 	height: 100%;
 	position: relative;
