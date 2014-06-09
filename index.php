@@ -23,9 +23,9 @@
 			<?php else: ?>
 				没有文章
 			<?php endif; ?>
-			<?php pagination($query_string); ?>
-			<span id="ajax-line">2</span>  
+			<?php pagination($query_string); ?>  
 		</section>
+		<span id="ajax-line">2</span>
 <?php 
 	get_footer();
 ?>

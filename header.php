@@ -45,27 +45,33 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="container wrap">
-		<nav class="navbar navbar-dushed dushed"  role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hm-nav-collapse">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				    </button>
-				    <a class="navbar-brand" href="<?php bloginfo('url') ?>"><?php bloginfo('info'); ?></a>
-				</div>
+	<section id="head_wrap">
+		<div id="head-wrap-inner">
+			<nav class="nav navbar-dushed dushed container"  role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hm-nav-collapse">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="<?php bloginfo('url') ?>"><?php bloginfo('info'); ?></a>
+					</div>
 
-				<div class="collapse navbar-collapse" id="hm-nav-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">home</a></li>
-						<?php wp_list_pages(array(
-								'title_li' => ''
-							)); ?>
-						<li><?php wp_loginout(); ?></li>
-					</ul>
+					<div class="collapse navbar-collapse" id="hm-nav-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">home</a></li>
+							<?php wp_list_pages(array(
+									'title_li' => ''
+								)); ?>
+							<li><?php wp_loginout(); ?></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
+		
+	</section>
+	<div class="container wrap">
+		

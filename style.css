@@ -18,6 +18,21 @@ body{
 a:hover{
 	cursor: pointer;
 }
+#head_wrap{
+	width: 100%;
+	height: 64px;
+	position: relative;
+}
+#head-wrap-inner{
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	background: #fbfaf7 url(./image/bg-pattern.png) repeat center top;
+	width: 100%;
+}
+#head_wrap .navbar{
+	margin-bottom: 0px;
+}
 .navbar-dushed .navbar-toggle{
 	border-color: #ddd;
 }
@@ -265,7 +280,9 @@ footer p{
 .content-block a:hover{
 	text-decoration: none;
 }
-
+.main-block{
+	margin-top: 20px;
+}
 /* END-content-aside */
 
 #music-body{
