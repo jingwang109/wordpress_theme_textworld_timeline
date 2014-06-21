@@ -24,6 +24,7 @@ a:hover{
 	position: relative;
 }
 #head-wrap-inner{
+	padding-top: 15px;
 	position: fixed;
 	top: 0px;
 	z-index: 100;
@@ -280,8 +281,10 @@ footer p{
 .content-block a:hover{
 	text-decoration: none;
 }
+/* 文章内容页 */
 .main-block{
 	margin-top: 20px;
+	background: #fff;
 }
 /* END-content-aside */
 

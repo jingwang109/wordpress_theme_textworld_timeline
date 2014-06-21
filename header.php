@@ -24,7 +24,7 @@
 	<meta property="wb:webmaster" content="c7f6f9e8bdd02cf7" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title><?php bloginfo('name'); ?><?php wp_title( '|'); ?></title>
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	
