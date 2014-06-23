@@ -61,11 +61,11 @@
 
 					<div class="collapse navbar-collapse" id="hm-nav-collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">home</a></li>
+							<li><a href="#">首页</a></li>
 							<?php wp_list_pages(array(
 									'title_li' => ''
 								)); ?>
-							<li><?php wp_loginout(); ?></li>
+							
 						</ul>
 					</div>
 				</div>

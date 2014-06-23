@@ -1,6 +1,24 @@
 <?php 
 	get_header();
 ?>
+		<div id="index-header" class="clearfix">
+			<div class="index-title">
+				<h1>TextWorld</h1>
+				<p>艹！！！！</p>
+			</div>
+			<div class="index-slider">
+				<div class="index-img">
+					<a href="javascript:void(0);">
+						<img src="<?php bloginfo('template_url'); ?>/image/rxy.jpg" alt="Ta">
+					</a>
+				</div>
+			</div>
+		</div>
+		<p class="follow-us-here">
+			follow me here
+			<span></span>
+		</p>
+		<hr class="double-line">
 		<section class="timeline">
 			<?php if(have_posts()): ?>
 				<?php while(have_posts()): the_post();  ?>
