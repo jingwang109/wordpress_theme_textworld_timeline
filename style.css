@@ -100,6 +100,16 @@ background-color: #ccc;
 .index-title{
 	display: block;
 	float: left;
+	width: 600px;
+	overflow: hidden;
+}
+.index-title h1{
+	display: none;
+}
+.index-title p{
+	margin-top: 80px;
+	font-size: 46px;
+	text-shadow:2px 2px 5px #333333;
 }
 .index-slider{
 	display: block;

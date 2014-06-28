@@ -3,8 +3,8 @@
 ?>
 		<div id="index-header" class="clearfix">
 			<div class="index-title">
-				<h1>TextWorld</h1>
-				<p>艹！！！！</p>
+				<h1>Saying:</h1>
+				<p>There is no certainty, only opportunity。</p>
 			</div>
 			<div class="index-slider">
 				<div class="index-img">
