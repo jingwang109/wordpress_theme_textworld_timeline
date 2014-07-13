@@ -1,33 +1,38 @@
 window.onload = function(){
 	$('iframe').remove();
 	var isLoading = false;
+	var current_page = 1;
+
 	$(window).bind("scroll", function(){
-		if(( $(window).scrollTop() + $(window).height() ) > $(document).height() - 200){
+		if( ($(window).scrollTop() + $(window).height()) > $(document).height() - 200){
 			if(isLoading == false){
-				alert("loading");
 				isLoading = true;
-				console.log("page id is " + $("#ajax-line").text());
+				console.log("current page is " + current_page);
+				current_page++;
+				$('#LoadingTip').show();
 				$.ajax({
-					url: "/page/" + $('#ajax-line').text(),
+					url: "http://www.textworld.me/page/" + current_page,
 					method: "GET",
 					success: function(data){
-						var content = $(data).find(".timeline");
-						if (content.find('section')){
-							$('.timeline').append(content);
-							$('#ajax-line').text(parseInt($('#ajax-line').text()) + 1);
-						}else{
-							alert("已经到了最后一页");
-						}
-						isLoading = false;					
+						isLoading = false;
+						//console.log(data);
+						var content = $(data).find(".post");
+						$(".timeline").append(content);
+						$("#LoadingTip").hide();
 					},
 					error: function(data){
-						alert("error");
+						switch(data.status){
+							case 404:
+								$("#LoadingTip").hide();
+								$("#LoadedTip").show();
+								break;
+							default:
+								break;
+						}
 						console.log(data);
-						isLoading = false;
 					}
 				});
 			}
-			
 		}
 	});
 }

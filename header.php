@@ -45,6 +45,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<!--
 	<section id="head_wrap">
 		<div id="head-wrap-inner">
 			<nav class="nav navbar-dushed dushed container"  role="navigation">
@@ -73,5 +74,6 @@
 		</div>
 		
 	</section>
+	-->
 	<div class="container wrap">
 		

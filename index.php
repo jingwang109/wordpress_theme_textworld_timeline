@@ -41,9 +41,10 @@
 			<?php else: ?>
 				没有文章
 			<?php endif; ?>
-			<?php pagination($query_string); ?>  
+			<?php //pagination($query_string); ?>  
 		</section>
-		<span id="ajax-line">2</span>
+		<div id="LoadingTip" style="display:none;text-align:center;"><h4>正在加载中</h4></div>
+		<div id="LoadedTip" style="display:none;text-align:center;"><h4>加载完成</h4></div>
 <?php 
 	get_footer();
 ?>
